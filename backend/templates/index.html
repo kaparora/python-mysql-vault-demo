@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="hero">
+      <div class="hero-body">
+        <div>
+          <h1 class="title">
+            Protect your data!
+          </h1>
+          <p class="body"><font color="#363942">
+            <br><p>
+            The <a href="https://www.vaultproject.io/docs/secrets/transit/index.html">Transit</a> secrets engine in HashiCorp Vault handles cryptographic functions on data in-transit. Vault doesn't store the data sent to the secrets engine. It can also be viewed as "cryptography as a service" or "encryption as a service". The Transit secrets engine can also sign and verify data, generate hashes and HMACs of data, and act as a source of random bytes.
+            <p align="center"><br><img src="/static/vault-transit.png" width=736 height=160><br></p>
+            <br>
+            The primary use case for Transit is to encrypt data from applications while still storing that encrypted data in some primary data store. This relieves the burden of proper encryption/decryption from application developers and pushes the burden onto the operators of Vault.
+            <p><br>
+            The <a href="https://www.vaultproject.io/docs/secrets/transform/index.html">Transform</a> secrets engine in HashiCorp Vault handles secure data transformation and tokenization against the provided secrets. Transformation methods encompass NIST vetted cryptographic standards such as <a href="https://en.wikipedia.org/wiki/Format-preserving_encryption">format-preserving encryption (FPE)</a> via <a href="https://csrc.nist.gov/publications/detail/sp/800-38g/rev-1/draft">FF3-1</a> to encode your secrets while maintaining the data format and length. In addition, it can also be pseudonymous transformations of the data through other means, such as masking.
+            <p align="center"><br><img src="/static/vault-transform.png" width=736 height=160><br></p>
+            <br>
+            Think of a scenario where an organization must cryptographically protect the personally identifiable information (PII) while preserving the data format and length. For example, the database schema expects a certain character length and/or only allow alphanumeric. The preservation of the original data format or length may be driven by compliance with certain industry standards such as <a href="https://www.hhs.gov/hipaa/index.html">HIPAA</a> or <a href="https://www.pcisecuritystandards.org/">PCI</a>. This prevents the need for change in the existing database schema.
+            <p><br>
+            In this demonstration, we'll be using transit to protect Personally Identifiable Information (PII). It is also used to protect other sensitive data.
+            </font></p>
+        </div>
+        </p>
+      </div>
+    </section>
+{% endblock %}

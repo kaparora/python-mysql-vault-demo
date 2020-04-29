@@ -1,0 +1,74 @@
+/* Display Font (Gilmer) */
+@font-face {
+  font-family: "gilmer-web";
+  src: url("/static/styles/gilmer-light.woff2") format("woff2"),
+    url("/static/styles/gilmer-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilmer-web";
+  src: url("/static/styles/gilmer-regular.woff2") format("woff2"),
+    url("/static/styles/gilmer-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilmer-web";
+  src: url("/static/styles/gilmer-medium.woff2") format("woff2"),
+    url("/static/styles/gilmer-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilmer-web";
+  src: url("/static/styles/gilmer-bold.woff2") format("woff2"),
+    url("/static/styles/gilmer-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Body Font (Metro) */
+@font-face {
+  font-family: "metro-web";
+  src: url("/static/styles/metro-sans-book.woff2") format("woff2"),
+    url("/static/styles/metro-sans-book.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metro-web";
+  src: url("/static/styles/metro-sans-regular.woff2") format("woff2"),
+    url("/static/styles/metro-sans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metro-web";
+  src: url("/static/styles/metro-sans-semi-bold.woff2") format("woff2"),
+    url("/static/styles/metro-sans-semi-bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metro-web";
+  src: url("/static/styles/metro-sans-bold.woff2") format("woff2"),
+    url("/static/styles/metro-sans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Code Font (Deja Vu) */
+@font-face {
+  font-family: "dejavu-sans-mono-web";
+  src: url("/static/styles/DejaVuSansMono.woff2") format("woff2"),
+    url("/static/styles/DejaVuSansMono.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}

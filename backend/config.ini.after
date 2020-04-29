@@ -1,0 +1,23 @@
+[DEFAULT]
+LogLevel = DEBUG
+
+[DATABASE]
+Address = vault-demo-mysql
+Port = 3306
+Database = my_app
+
+[VAULT]
+Enabled = True
+DynamicDBCreds = True
+DynamicDBCredsPath = data_protection/database/creds/vault-demo-app
+ProtectRecords = False
+Address = http://vault-demo-vault:8200
+Token = root
+Namespace = dev
+KeyPath = data_protection/transit
+KeyName = customer-key
+Transform = True
+TransformPath = data_protection/transform
+SSNRole = ssn
+TransformMaskingPath = data_protection/masking/transform
+CCNRole = ccn

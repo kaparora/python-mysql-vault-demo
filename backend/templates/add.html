@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p><br>
+  <h1 class="title">Add User</h1>
+  <form action="add" method="post">
+    <div class="field">
+      <label class="label">First Name</label>
+      <div class="control">
+        <input class="input" type="text" name="first_name" placeholder="First Name">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Last Name</label>
+      <div class="control">
+        <input class="input" type="text" name="last_name" placeholder="Last Name">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Birthdate</label>
+      <div class="control has-icons-left">
+        <input class="input" type="text" name="birth_date" placeholder="Birthdate" >
+        <span class="icon is-small is-left">
+          <i class="fas fa-calendar-alt"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Social Security Number</label>
+      <div class="control has-icons-left">
+        <input class="input" type="text" name="ssn" placeholder="SSN" >
+        <span class="icon is-small is-left">
+          <i class="fas file-alt"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Credit Card Number</label>
+      <div class="control has-icons-left">
+        <input class="input" type="text" name="ccn" placeholder="CCN" >
+        <span class="icon is-small is-left">
+          <i class="fas file-alt"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Address</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" name="address" placeholder="Address" >
+          <span class="icon is-small is-left">
+              <i class="far fa-address-card"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+          <label class="label">Salary</label>
+          <div class="control has-icons-left">
+            <input class="input" type="text" name="salary" placeholder="Yearly Salary" >
+            <span class="icon is-small is-left">
+                <i class="fas fa-money-check-alt"></i>
+            </span>
+          </div>
+        </div>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link">Submit</button>
+      </div>
+      <div class="control">
+        <button class="button is-text">Cancel</button>
+      </div>
+    </div>
+  </form>
+{% endblock %}

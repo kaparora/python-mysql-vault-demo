@@ -1,0 +1,12 @@
+[DEFAULT]
+LogLevel = DEBUG
+
+[DATABASE]
+Address = vault-demo-mysql
+Port = 3306
+Database = my_app
+User = root
+Password = root
+
+[VAULT]
+Enabled = False
