@@ -5,6 +5,8 @@ export VAULT_NAMESPACE=
 #login into Vault 
 vault login root
 #write the licemse
-vault write sys/license text="<YOUR_LICENSE>"
+LICENSE=`cat license.txt`
+vault write sys/license text=$LICENSE
 #check the status of Vault server
 vault status
+vault read sys/license
